@@ -1,0 +1,15 @@
+{
+  "domain": "origin_energy_personal",
+  "name": "Origin Energy (Personal)",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [
+    "recorder"
+  ],
+  "documentation": "https://github.com/YOUR_USERNAME/ha-origin-energy-personal",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/YOUR_USERNAME/ha-origin-energy-personal/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}

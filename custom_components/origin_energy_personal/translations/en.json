@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Origin Energy session",
+        "description": "Paste the value of the `auth0` cookie from id.originenergy.com.au (see the README). It starts with `s%3A`.",
+        "data": {
+          "auth0_cookie": "auth0 cookie value"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Session expired",
+        "description": "Paste a fresh `auth0` cookie value from id.originenergy.com.au.",
+        "data": {
+          "auth0_cookie": "auth0 cookie value"
+        }
+      }
+    },
+    "error": {
+      "invalid_cookie": "That session cookie was rejected. It is usually truncated, or you copied auth0_compat instead of auth0.",
+      "cannot_connect": "Could not reach Origin (bot protection, network or server error). Wait a few minutes and retry.",
+      "no_service": "No electricity service was found on this account.",
+      "wrong_account": "That cookie belongs to a different account or agreement.",
+      "auth_not_configured": "The Auth0 values in const.py have not been filled in yet (see the README)."
+    },
+    "abort": {
+      "already_configured": "This agreement is already configured.",
+      "reauth_successful": "Session refreshed."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_hours": "Poll interval (hours, 1-24)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_update": {
+        "name": "Last update"
+      },
+      "last_reading": {
+        "name": "Last meter reading"
+      },
+      "gas_last_reading": {
+        "name": "Last gas reading"
+      }
+    }
+  }
+}
